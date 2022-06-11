@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24166666666666667" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/drawable/bg_circle.xml" value="0.2462962962962963" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/drawable/bg_rectangle.xml" value="0.2564814814814815" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/drawable/button.xml" value="0.290625" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/drawable/ic_baseline_person_pin_24.xml" value="0.24166666666666667" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/drawable/ic_launcher_background.xml" value="0.24166666666666667" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/drawable/input.xml" value="0.290625" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/drawable/ngotak.xml" value="0.290625" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/drawable/ngotaks.xml" value="0.290625" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/layout/activity_detail_contact.xml" value="0.264" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/layout/activity_main.xml" value="0.2604166666666667" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/layout/item_contact.xml" value="0.27447916666666666" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/layout/login.xml" value="0.2509057971014493" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/layout/signup.xml" value="0.24682971014492755" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
