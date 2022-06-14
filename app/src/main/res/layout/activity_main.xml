@@ -7,15 +7,48 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/bulet"
+        android:layout_width="185dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="300dp"
+        android:src="@drawable/bulet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/bulet2"
+        android:layout_width="185dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="317dp"
+        android:src="@drawable/bulet2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bulet3"
+        android:layout_width="185dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="350dp"
+        android:src="@drawable/bulet3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <androidx.constraintlayout.widget.ConstraintLayout
+
         android:id="@+id/topbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:padding="5dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <TextView
             android:id="@+id/title"
             android:layout_width="300dp"
@@ -30,31 +63,15 @@
             android:foregroundGravity="center"
             app:layout_constraintTop_toTopOf="@id/topbar"
             app:layout_constraintBottom_toBottomOf="@id/topbar"
-            app:layout_constraintRight_toLeftOf="@id/tv_option"
             app:layout_constraintLeft_toLeftOf="@id/topbar"/>
 
-        <TextView
-            android:id="@+id/tv_option"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:gravity="center"
-            android:text="+"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/topbar"
-            app:layout_constraintLeft_toRightOf="@id/title"
-            app:layout_constraintRight_toRightOf="@+id/topbar"
-            app:layout_constraintTop_toTopOf="@id/topbar"
-            />
         <View
             android:id="@+id/hr"
             android:layout_width="match_parent"
             android:layout_height="1.5dp"
             android:background="@color/silver"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintTop_toBottomOf="@id/topbar"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>

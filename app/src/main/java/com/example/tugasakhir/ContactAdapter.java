@@ -91,14 +91,13 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
     {
         LinearLayout contactLayout;
         TextView tvName, tvNumber, tvCall, tvMessage,
-                tvWhatsapp, tvDelete;
+                tvWhatsapp;
         public ContactViewHolder(@NonNull View
                                          itemView) {
             super(itemView);
             contactLayout =
                     itemView.findViewById(R.id.contact_layout);
-            tvDelete =
-                    itemView.findViewById(R.id.tv_delete);
+
             tvName =
                     itemView.findViewById(R.id.tv_name);
             tvNumber =
@@ -110,7 +109,6 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ContactV
                     itemView.findViewById(R.id.tv_message);
             tvWhatsapp =
                     itemView.findViewById(R.id.tv_whatsapp);
-            tvDelete.setOnClickListener(this);
         }
         @Override
         public void onClick(View v) {

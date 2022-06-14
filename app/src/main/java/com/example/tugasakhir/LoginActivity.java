@@ -42,6 +42,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         pass = (EditText) findViewById(R.id.pass);
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
+
+        mAuth = FirebaseAuth.getInstance();
     }
 
     @Override
@@ -93,7 +95,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                 if(task.isSuccessful()){
                     //redirect to user profile
-
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
 
                 }else{
                     Toast.makeText(LoginActivity.this, "Failed to login! Please check your credentials", Toast.LENGTH_SHORT).show();

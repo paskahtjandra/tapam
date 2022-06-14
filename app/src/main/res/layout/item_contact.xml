@@ -41,19 +41,8 @@
                     android:layout_weight="1"
                     android:text="User"
                     android:textSize="15sp"
-                    android:textColor="@color/black" />
-                <TextView
-                    android:id="@+id/tv_delete"
-
-                    android:layout_width="wrap_content"
-                    android:layout_weight="0.05"
-                    android:layout_height="wrap_content"
-                    android:padding="2dp"
-                    android:gravity="center"
-                    android:text="DEL"
-                    android:textColor="@color/white"
                     android:textStyle="bold"
-                    android:background="@color/red"/>
+                    android:textColor="@color/black" />
 
             </LinearLayout>
             <TextView

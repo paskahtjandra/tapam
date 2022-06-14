@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private TextView option;
     private LinearLayout layAddContact;
     private EditText etName, etNumber, etInstagram, etGroup;
     private Button btnClear, btnSubmit;
@@ -27,23 +26,15 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycle_contact);
         recyclerView.setHasFixedSize(true);
         layAddContact = findViewById(R.id.layout_add);
-        option = findViewById(R.id.tv_option);
         etName = findViewById(R.id.et_name);
         etNumber = findViewById(R.id.et_number);
         etInstagram = findViewById(R.id.et_instagram);
         etGroup = findViewById(R.id.et_group);
         btnClear = findViewById(R.id.btn_clear);
         btnSubmit = findViewById(R.id.btn_submit);
-        option.setOnClickListener(v -> {
-            if (recyclerView.getVisibility() == View.VISIBLE){
-                recyclerView.setVisibility(View.GONE);
-                layAddContact.setVisibility(View.VISIBLE);
-                clearData();
-            }else {
-                recyclerView.setVisibility(View.VISIBLE);
-                layAddContact.setVisibility(View.GONE);
-            }
-        });
+        recyclerView.setVisibility(View.VISIBLE);
+        layAddContact.setVisibility(View.GONE);
+
 
         btnClear.setOnClickListener(v -> {
             clearData();
