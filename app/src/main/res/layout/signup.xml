@@ -3,8 +3,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    tools:context=".SignupActivity">
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="@color/white">
+
 
     <View
         android:id="@+id/header"
@@ -65,7 +67,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="70dp"
-        android:src="@drawable/PeduliVaksin"
+        android:src="@drawable/pedulivaksins"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -95,7 +97,7 @@
             android:layout_width="360dp"
             android:layout_height="30dp"
             android:layout_marginTop="10dp"
-            android:src="@drawable/register"
+            android:src="@drawable/registers"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/header" />
 
@@ -160,7 +162,7 @@
             android:textStyle="bold"/>
 
         <TextView
-            android:id="@+id/title"
+            android:id="@+id/backlogin"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="already have account? login"
@@ -172,7 +174,19 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="10dp"/>
 
-
     </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
