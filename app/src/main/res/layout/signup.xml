@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"  xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    tools:context=".SignupActivity">
 
     <View
         android:id="@+id/header"
@@ -58,7 +59,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/nama"
+        android:id="@+id/aplikasi"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginTop="16dp"
@@ -92,19 +93,43 @@
             android:id="@+id/t.signup"
             android:layout_width="360dp"
             android:layout_height="30dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             android:src="@drawable/Register"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/header" />
 
         <EditText
-            android:id="@+id/gmail"
+            android:id="@+id/nama"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/input"
-            android:hint="Mobile Number / Email"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input"
+            android:hint="Email"
             android:inputType="textEmailAddress"
+            android:paddingLeft="30dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/telfon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/input"
+            android:hint="Mobile Number"
+            android:inputType="number"
             android:paddingLeft="30dp"
             android:textColor="@color/black"
             android:textColorHint="@color/black" />
@@ -122,16 +147,30 @@
             android:textColorHint="@color/black" />
 
         <Button
-            android:id="@+id/login"
+            android:id="@+id/signup"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:background="@drawable/button"
             android:layout_marginTop="20dp"
-            android:text="LOGIN"
+            android:text="REGISTER"
             android:textAllCaps="true"
             android:textSize="16sp"
             android:textColor="@color/white"
             android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="already have account? login"
+            android:textSize="19sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:foregroundGravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"/>
+
 
     </LinearLayout>
 
