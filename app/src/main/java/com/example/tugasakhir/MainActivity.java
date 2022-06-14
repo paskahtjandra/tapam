@@ -1,5 +1,6 @@
 package com.example.tugasakhir;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,6 +11,15 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,8 +29,10 @@ public class MainActivity extends AppCompatActivity {
     private Button btnClear, btnSubmit;
     private ArrayList<ContactModel> contactList = new ArrayList<>();
     private ContactAdapter contactAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.recycle_contact);
@@ -76,6 +88,9 @@ public class MainActivity extends AppCompatActivity {
             recyclerView.setAdapter(contactAdapter);
         });
         recyclerView.setAdapter(contactAdapter);
+
+
+
     }
     public void clearData(){
         etName.setText("");
