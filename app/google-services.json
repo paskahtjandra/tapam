@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "840773221571",
-    "project_id": "tugasakhir-d01c8",
-    "storage_bucket": "tugasakhir-d01c8.appspot.com"
+    "project_number": "303560944572",
+    "firebase_url": "https://tapam-74658-default-rtdb.firebaseio.com",
+    "project_id": "tapam-74658",
+    "storage_bucket": "tapam-74658.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:840773221571:android:623567a0b6239fc68ff676",
+        "mobilesdk_app_id": "1:303560944572:android:fb72d25fe7913bd35259b9",
         "android_client_info": {
           "package_name": "com.example.tugasakhir"
         }
       },
       "oauth_client": [
         {
-          "client_id": "840773221571-dfrp8vngj6rm8flp6s3ev6bh8ejoplrc.apps.googleusercontent.com",
+          "client_id": "303560944572-qvqr8cv2dbvhf37a28pe2h65mpnecmj3.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAUQ4TeT-GB69vcdDs1QtRI8X7_m7f4rE0"
+          "current_key": "AIzaSyDlyvfK35PDhbyKWIGzOIYuFiZxM8LG5JA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "840773221571-dfrp8vngj6rm8flp6s3ev6bh8ejoplrc.apps.googleusercontent.com",
+              "client_id": "303560944572-qvqr8cv2dbvhf37a28pe2h65mpnecmj3.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

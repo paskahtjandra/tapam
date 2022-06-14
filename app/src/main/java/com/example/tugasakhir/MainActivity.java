@@ -1,28 +1,72 @@
 package com.example.tugasakhir;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
+import android.nfc.TagLostException;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private RecyclerView recyclerView;
     private LinearLayout layAddContact;
     private EditText etName, etNumber, etInstagram, etGroup;
     private Button btnClear, btnSubmit;
     private ArrayList<ContactModel> contactList = new ArrayList<>();
     private ContactAdapter contactAdapter;
+
+    private FirebaseUser user;
+    private String userID;
+    private DatabaseReference reference;
+    private ImageView profil;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        reference = FirebaseDatabase.getInstance().getReference("Users");
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        userID = user.getUid();
+        final TextView namausers = (TextView) findViewById(R.id.namauser);
+
+        reference.child(userID).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+                if(task.isSuccessful()){
+                    DataSnapshot dataSnapshot = task.getResult();
+                    String name = String.valueOf(dataSnapshot.child("name").getValue());
+                    namausers.setText(name);
+                }
+            }
+        });
+
+        profil = (ImageView) findViewById(R.id.profil);
+        profil.setOnClickListener(this);
+
         recyclerView = findViewById(R.id.recycle_contact);
         recyclerView.setHasFixedSize(true);
         layAddContact = findViewById(R.id.layout_add);
@@ -76,11 +120,23 @@ public class MainActivity extends AppCompatActivity {
             recyclerView.setAdapter(contactAdapter);
         });
         recyclerView.setAdapter(contactAdapter);
+
+
+
     }
     public void clearData(){
         etName.setText("");
         etNumber.setText("");
         etInstagram.setText("");
         etGroup.setText("");
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.profil:
+                startActivity(new Intent(this, ProfileActivity.class));
+                break;
+        }
     }
 }

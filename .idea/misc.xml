@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir - Copy/app/src/main/res/drawable/bg_circle.xml" value="0.290625" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir - Copy/app/src/main/res/drawable/button.xml" value="0.290625" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir - Copy/app/src/main/res/drawable/person.xml" value="0.290625" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir - Copy/app/src/main/res/layout/activity_detail_contact.xml" value="0.25226449275362317" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir - Copy/app/src/main/res/layout/activity_main.xml" value="0.26766304347826086" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir - Copy/app/src/main/res/layout/activity_profile.xml" value="0.25226449275362317" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir - Copy/app/src/main/res/layout/item_contact.xml" value="0.25226449275362317" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir - Copy/app/src/main/res/layout/landingpage.xml" value="0.25226449275362317" />
+        <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir - Copy/app/src/main/res/layout/login.xml" value="0.25226449275362317" />
         <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24166666666666667" />
         <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/drawable/bg_circle.xml" value="0.2462962962962963" />
         <entry key="..\:/Paskah/kuliah/Sem_4/pam/tugasakhir/app/src/main/res/drawable/bg_rectangle.xml" value="0.2564814814814815" />
